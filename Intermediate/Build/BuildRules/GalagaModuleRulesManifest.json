@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\Progamacion\\Galaga\\Galaga\\Source\\Galaga\\Galaga.Build.cs",
+		"E:\\Progamacion\\Galaga\\Galaga\\Source\\Galaga.Target.cs",
+		"E:\\Progamacion\\Galaga\\Galaga\\Source\\GalagaEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
