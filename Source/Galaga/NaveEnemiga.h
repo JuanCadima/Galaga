@@ -27,6 +27,13 @@ protected:
 	FVector Velocidad;
 	float VelocidadMaxima;
 	
+	FTimerHandle TimerDisparo;
+	FVector GunOffset;
+	float fireRate;
+	uint32 bCanFire = 1;
+	
+	
+
 
 	UStaticMeshComponent* MeshNaveEnemiga;
 
@@ -37,7 +44,10 @@ public:
 public:
 
 	virtual	void Disparar();
+	virtual void ShootTimerExpired();
 	virtual void Moverse(float DeltaTime);
+	virtual void RecibirDano(int Dano);
+	virtual void Morir();
 	virtual void CrearNaveEnemiga(FString NombreNave);
 	FString GetNombreNaveEnemiga();
 };

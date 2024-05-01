@@ -262,8 +262,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveRapida.cpp"
-/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\Definitions.h"
+/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\Definitions.Galaga.h"
 /Fo"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\NaveRapida.cpp.obj"
 /TP
 /GR-

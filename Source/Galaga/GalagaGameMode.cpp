@@ -3,7 +3,10 @@
 #include "GalagaGameMode.h"
 #include "GalagaPawn.h"
 #include "NavesdeVelocidades.h"
-
+#include "NaveEnemigaSquad.h"
+#include "ConstruirNaveNodriza.h"
+#include "DirectorNave.h"
+#include "NaveNodriza.h"
 AGalagaGameMode::AGalagaGameMode()
 {
 	// set default pawn class to our character class
@@ -13,8 +16,29 @@ AGalagaGameMode::AGalagaGameMode()
 void AGalagaGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+	AConstruirNaveNodriza* NaveNodriza = GetWorld()->SpawnActor<AConstruirNaveNodriza>(AConstruirNaveNodriza::StaticClass(), FVector(0, 0, 0), FRotator(0, 0, 0));
+	ADirectorNave* C = GetWorld()->SpawnActor<ADirectorNave>(ADirectorNave::StaticClass());
+
+	C->Construirlo(NaveNodriza);
+
+
+
+
+	ANaveEnemigaSquad* Escuadra = GetWorld()->SpawnActor<ANaveEnemigaSquad>(ANaveEnemigaSquad::StaticClass(), FVector(0, 0, 0), FRotator(0, 0, 0));
 	
-	FVector Spawn = FVector(250.0f, 0.0f, 250.0f);
+	FVector Separacion = FVector(0.0f, 150.0f, 0.0f);
+
+	FVector SpawnEscuadra = FVector(250.0f, 0.0f, 200.0f);
+	for (int i = 0; i < 10; i++)
+	{
+		ANaveEnemiga* NaveEnemiga = GetWorld()->SpawnActor<ANaveEnemiga>(ANaveEnemiga::StaticClass(), SpawnEscuadra, FRotator(0, 0, 0));
+
+		Escuadra->AgregarNaveEnemiga(NaveEnemiga, Separacion);
+	}
+	
+	FVector Spawn = FVector(250.0f, 0.0f, 200.0f);
 	ANaveEnemiga* NaveEnemiga = GetWorld()->SpawnActor<ANaveEnemiga>(ANaveEnemiga::StaticClass(), Spawn, FRotator(0, 0, 0));
 
 	ACreacionNavesEnemigas* CreadorNV = GetWorld()->SpawnActor<ANavesdeVelocidades>(ANavesdeVelocidades::StaticClass(), FVector(0, 0, 0), FRotator(0, 0, 0));

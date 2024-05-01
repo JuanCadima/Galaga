@@ -32,16 +32,14 @@
 /wd4244
 /wd4838
 /I .
-/I E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga
-/I E:\Progamacion\Galaga\Galaga\Source
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime\CoreUObject\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -233,6 +231,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga
+/I E:\Progamacion\Galaga\Galaga\Source
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -262,11 +262,8 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "E:\Progamacion\Galaga\Galaga\Source\Galaga\GalagaPawn.cpp"
-/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\Definitions.Galaga.h"
+/FI"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\Definitions.h"
 /Fo"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Development\Galaga\GalagaPawn.cpp.obj"
 /TP
 /GR-

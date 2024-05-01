@@ -8,7 +8,7 @@ ANaveEnemiga* ANavesdeVelocidades::CreaNavesEnemigas(FString NombreNave)
 {
 	if (NombreNave == "NaveRapida")
 	{
-		FVector SpawnLocation = FVector(0.0f, 0.0f, 250.0f);
+		FVector SpawnLocation = FVector(0.0f, 0.0f, 200.0f);
 		return GetWorld()->SpawnActor<ANaveRapida>(SpawnLocation, FRotator(0, 0, 0));
 
 	}

@@ -6,6 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Engine/StaticMesh.h"
+#include "NaveEnemiga.h"
 
 AGalagaProjectile::AGalagaProjectile() 
 {
@@ -39,6 +40,12 @@ void AGalagaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
+	}
+	ANaveEnemiga* NaveEnemiga = Cast<ANaveEnemiga>(OtherActor);
+	if (NaveEnemiga)
+	{
+		NaveEnemiga->RecibirDano(0);
+		Destroy();
 	}
 
 	Destroy();
