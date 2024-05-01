@@ -20,7 +20,7 @@ ANaveEnemiga::ANaveEnemiga()
 	VelocidadMaxima = 100;
 
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	fireRate = 10.0f;
+	fireRate = 0.1f;
 	bCanFire = true;
 
 	
@@ -43,7 +43,7 @@ void ANaveEnemiga::Tick(float DeltaTime)
 
 void ANaveEnemiga::Disparar()
 {
-	
+
 	//if (bCanFire && true)
 	//{
 	//	FVector SpawnLocation = GetActorLocation() + GunOffset;
@@ -57,19 +57,26 @@ void ANaveEnemiga::Disparar()
 	//	World->GetTimerManager().SetTimer(TimerDisparo, this, &ANaveEnemiga::ShootTimerExpired, fireRate);
 	//}
 
-	AGalagaPawn* GalagaPawn = Cast<AGalagaPawn>(UGameplayStatics::GetPlayerPawn(this, 0));
-	if (GalagaPawn)
+
+	if (bCanFire)
 	{
-		FVector Jugador = GalagaPawn->GetActorLocation();
-		FVector FireDirection = Jugador - GetActorLocation().GetSafeNormal();
-		FVector SpawnLocation = GetActorLocation() + GetActorForwardVector() * GunOffset;
-		UWorld* const World = GetWorld();
-		if (World)
+		AGalagaPawn* GalagaPawn = Cast<AGalagaPawn>(UGameplayStatics::GetPlayerPawn(this, 0));
+		if (GalagaPawn)
 		{
-		AGalagaProjectile* Projectile = World->SpawnActor<AGalagaProjectile>(SpawnLocation, FireDirection.Rotation());
+			FVector FireDirection = GalagaPawn->GetActorLocation() - GetActorLocation();
+			FireDirection.Normalize();
+			//FVector Jugador = GalagaPawn->GetActorLocation();
+			//FVector FireDirection = Jugador - GetActorLocation().GetSafeNormal();
+			FVector SpawnLocation = GetActorLocation() + GetActorForwardVector() * GunOffset;
+			UWorld* const World = GetWorld();
+			if (World)
+			{
+				AGalagaProjectile* Projectile = World->SpawnActor<AGalagaProjectile>(SpawnLocation, FireDirection.Rotation());
+			}
+			bCanFire = false;
+			World->GetTimerManager().SetTimer(TimerDisparo, this, &ANaveEnemiga::ShootTimerExpired, fireRate);
+
 		}
-		bCanFire = false;
-		World->GetTimerManager().SetTimer(TimerDisparo, this, &ANaveEnemiga::ShootTimerExpired, fireRate);
 	}
 }
 
