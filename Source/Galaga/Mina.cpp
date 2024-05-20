@@ -42,8 +42,8 @@ void AMina::Desactivar()
 
 void AMina::Detonar()
 {
-	Destroy();
-	UE_LOG(LogTemp, Warning, TEXT("Mina detonada"));
+	//Destroy();
+	//UE_LOG(LogTemp, Warning, TEXT("Mina detonada"));
 }
 
 void AMina::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)

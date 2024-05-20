@@ -56,10 +56,10 @@ void AAsteroides::SpawnAsteroide()
 	//GetWorld()->SpawnActor<AAsteroides>(FVector(0.0f, 0.0f, 0.0f), FRotator(0.0f, 0.0f, 0.0f));
 	if (AsteroideArray.Num() < MaxAsteroide)
 	{
-		AAsteroides* Asteroide = GetWorld()->SpawnActor<AAsteroides>(FVector(300.0f, 0.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
-		if (Asteroide)
+		//AAsteroides* Asteroide = GetWorld()->SpawnActor<AAsteroides>(FVector(300.0f, 0.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
+		//if (Asteroide)
 		{
-			AsteroideArray.Add(Asteroide);
+			//AsteroideArray.Add(Asteroide);
 		}
 	}
 	float IntervaloSpawn = FMath::FRandRange(IntervaloMin, IntervaloMax);

@@ -20,9 +20,9 @@ void AFacade::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Asteroides = GetWorld()->SpawnActor<AAsteroides>(AAsteroides::StaticClass());
+	Asteroides = GetWorld()->SpawnActor<AAsteroides>(AAsteroides::StaticClass(), FVector(150.0f, 0.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
 	Peligro.Add(Asteroides);
-	Mina = GetWorld()->SpawnActor<AMina>(AMina::StaticClass());
+	Mina = GetWorld()->SpawnActor<AMina>(AMina::StaticClass(), FVector(500.0f, -300.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
 	Lancen.Add(Mina);
 	
 }
@@ -49,6 +49,7 @@ void AFacade::Comunicado(TArray<class AAsteroides*> _Peligro, TArray<class AMina
 void AFacade::ComunicadoMinas()
 {
 	Llamada.Empty();
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Minas Lanzadas"));
 	Comunicado(Peligro, Lancen, Llamada);
 
 }
@@ -56,5 +57,6 @@ void AFacade::ComunicadoMinas()
 void AFacade::ComunicadoAsteroides()
 {
 	Llamada.Empty();
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Asteroides en camino"));
 	Comunicado(Peligro, Lancen, Llamada);
 }
