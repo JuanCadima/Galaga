@@ -6,4 +6,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Facade.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Facade.generated.h
 E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\GalagaGameMode.generated.h

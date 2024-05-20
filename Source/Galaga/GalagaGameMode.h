@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Facade.h"
 #include "GalagaGameMode.generated.h"
 
 UCLASS(MinimalAPI)
@@ -20,6 +21,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	//class AConstruirNaveNodriza* Construccion;
+	AFacade* FFacade;
 };
 
 

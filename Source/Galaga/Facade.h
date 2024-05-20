@@ -25,13 +25,20 @@ public:
 
 public:
 
-	void Inicializar();
-	void SpwanAsteroide();
-	void SpwanMina();
+	TArray<FString> Llamada;
+
+	TArray<class AAsteroides*> Peligro;
+	TArray<class AMina*> Lancen;
+
 
 public:
 
 	class AAsteroides* Asteroides;
 	class AMina* Mina;
+
+	void Comunicado(TArray<class AAsteroides*> _Peligro, TArray<class AMina*> _Lancen, TArray<FString> _LLamada);
+
+	void ComunicadoMinas();
+	void ComunicadoAsteroides();
 
 };

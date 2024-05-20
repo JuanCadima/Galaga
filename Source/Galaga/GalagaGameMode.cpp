@@ -7,6 +7,8 @@
 #include "ConstruirNaveNodriza.h"
 #include "DirectorNave.h"
 #include "NaveNodriza.h"
+
+
 AGalagaGameMode::AGalagaGameMode()
 {
 	// set default pawn class to our character class
@@ -17,11 +19,16 @@ void AGalagaGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
+	FFacade = GetWorld()->SpawnActor<AFacade>(AFacade::StaticClass());
+	FFacade->ComunicadoAsteroides();
+	FFacade->ComunicadoMinas();
+
+
 
 	AConstruirNaveNodriza* NaveNodriza = GetWorld()->SpawnActor<AConstruirNaveNodriza>(AConstruirNaveNodriza::StaticClass(), FVector(0, 0, 0), FRotator(0, 0, 0));
 	ADirectorNave* C = GetWorld()->SpawnActor<ADirectorNave>(ADirectorNave::StaticClass());
 
-	C->Construirlo(NaveNodriza);
+	//C->Construirlo(NaveNodriza);
 
 
 
@@ -31,7 +38,7 @@ void AGalagaGameMode::BeginPlay()
 	FVector Separacion = FVector(0.0f, 150.0f, 0.0f);
 
 	FVector SpawnEscuadra = FVector(250.0f, 0.0f, 200.0f);
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 2; i++)
 	{
 		ANaveEnemiga* NaveEnemiga = GetWorld()->SpawnActor<ANaveEnemiga>(ANaveEnemiga::StaticClass(), SpawnEscuadra, FRotator(0, 0, 0));
 
