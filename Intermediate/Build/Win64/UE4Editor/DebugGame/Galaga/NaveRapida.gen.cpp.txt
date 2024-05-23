@@ -1,0 +1,7 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Definitions.Galaga.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga/NaveRapida.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveEnemiga.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NaveEnemiga.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NaveRapida.generated.h

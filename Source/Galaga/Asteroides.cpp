@@ -19,11 +19,6 @@ AAsteroides::AAsteroides()
 	PuntosAsteroide = 10;
 	VidaAsteroide = 100;
 	Velocidad = 50.0f;
-	//IntervaloSpawn = 1.0f;
-	IntervaloMax = 5.0f;
-	IntervaloMin = 1.0f;
-	MaxAsteroide = 10;
-
 }
 
 // Called when the game starts or when spawned
@@ -38,32 +33,36 @@ void AAsteroides::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	float IntervaloSpawn = FMath::FRandRange(IntervaloMin, IntervaloMax);
-	GetWorldTimerManager().SetTimer(TimeAsteroide, this, &AAsteroides::SpawnAsteroide, IntervaloSpawn, true);
+	FVector SpawnAreaMin = FVector(-1000.0f, -1000.0f, 200.0f);
+	FVector SpawnAreaMax = FVector(1000.0f, 1000.0f, 200.0f);
 
+	MovimientoAsteroide();
+
+}
+
+void AAsteroides::DestruirAsteroide()
+{
+	if (VidaAsteroide <= 0)
+	{
+		Destroy();
+	}
+	else
+	{
+		VidaAsteroide -= DanoAsteroide;
+	}
 }
 
 void AAsteroides::MovimientoAsteroide()
 {
 	FVector NewLocation = GetActorLocation();
 	NewLocation -= GetActorForwardVector() * Velocidad;
-	SetActorLocation(NewLocation);
-}
-
-void AAsteroides::SpawnAsteroide()
-{
-
-	//GetWorld()->SpawnActor<AAsteroides>(FVector(0.0f, 0.0f, 0.0f), FRotator(0.0f, 0.0f, 0.0f));
-	if (AsteroideArray.Num() < MaxAsteroide)
+	if (NewLocaion.X < -1500 || NewLocation.X > 1500 || NewLocation.Y < -1500 || NewLocation.Y > 1500)
 	{
-		//AAsteroides* Asteroide = GetWorld()->SpawnActor<AAsteroides>(FVector(300.0f, 0.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
-		//if (Asteroide)
-		{
-			//AsteroideArray.Add(Asteroide);
-		}
-	}
-	float IntervaloSpawn = FMath::FRandRange(IntervaloMin, IntervaloMax);
-	GetWorldTimerManager().SetTimer(TimeAsteroide, this, &AAsteroides::SpawnAsteroide, IntervaloSpawn, false);
+		NewLocation = FVector(
+			FMathRange(SpawAreaMin.X, SpawnAreaMax.X),
+			FMathRange(SpawnAreaMin.Y, SpawnAreaMax.Y), 200.0f);
+	};
+	SetActorLocation(NewLocation);
 }
 
 void AAsteroides::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)

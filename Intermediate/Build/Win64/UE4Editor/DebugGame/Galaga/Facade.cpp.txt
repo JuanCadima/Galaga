@@ -1,0 +1,7 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Definitions.Galaga.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Facade.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Facade.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Asteroides.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Asteroides.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Mina.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Mina.generated.h

@@ -1,0 +1,33 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Definitions.Galaga.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\GalagaGameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Facade.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Facade.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\GalagaGameMode.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\GalagaPawn.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\GalagaPawn.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NavesdeVelocidades.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\CreacionNavesEnemigas.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveEnemiga.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NaveEnemiga.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\CreacionNavesEnemigas.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NavesdeVelocidades.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveEnemigaSquad.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NaveEnemigaSquad.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\ConstruirNaveNodriza.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\ConstructoraNaveEnemiga.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\ConstructoraNaveEnemiga.generated.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\ConstruirNaveNodriza.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\DirectorNave.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\DirectorNave.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveNodriza.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\NaveNodriza.generated.h

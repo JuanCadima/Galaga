@@ -33,11 +33,14 @@ void AMina::Tick(float DeltaTime)
 
 void AMina::Activar()
 {
+	//UE_LOG(LogTemp, Warning, TEXT("Mina activada"));
+
 
 }
 
 void AMina::Desactivar()
 {
+	//UE_LOG(LogTemp, Warning, TEXT("Mina desactivada"));
 }
 
 void AMina::Detonar()
@@ -56,18 +59,3 @@ void AMina::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComp
 			Detonar();
 		}
 }
-
-//void AMina::NotifyActorBeginOverlap(AActor* OtherActor)
-//{
-//	Super::NotifyActorBeginOverlap(OtherActor);
-//	
-//	AGalagaPawn* GalagaPawn = Cast<AGalagaPawn>(OtherActor);
-//	if (GalagaPawn)
-//	{
-//		UE_LOG(LogTemp, Warning, TEXT("Mina colisionada con GalagaPawn"));
-//		GalagaPawn->NotifyMineCollision();
-//		Detonar();
-//	}
-//	
-//}
-

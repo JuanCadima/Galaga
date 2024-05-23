@@ -27,27 +27,22 @@ public:
 
 	UStaticMeshComponent* AsteroideMesh;
 
-	FTimerHandle TimeAsteroide;
-
 	FString TipoAsteroide;
 
-	TArray<AAsteroides*> AsteroideArray;
+	//TArray<AAsteroides*> AsteroideArray;
 
 	int DanoAsteroide;
 	int PuntosAsteroide;
 	int VidaAsteroide;
-	int32 MaxAsteroide;
-	
-	//float IntervaloSpawn;
-	float IntervaloMax;
-	float IntervaloMin;
+
 	float Velocidad;
 
 public:
 
+	void DestruirAsteroide();
 
 	void MovimientoAsteroide();
-	void SpawnAsteroide();
+
 	void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit);
 
 	

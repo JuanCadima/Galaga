@@ -41,4 +41,7 @@ public:
 	void ComunicadoMinas();
 	void ComunicadoAsteroides();
 
+
+	void AgregarAsteroides();
+	void AgregarMinas();
 };
