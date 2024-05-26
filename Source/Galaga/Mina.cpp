@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Mina.h"
 #include "GalagaPawn.h"
 
@@ -11,9 +10,14 @@ AMina::AMina()
 	PrimaryActorTick.bCanEverTick = true;
 	MinaMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MinaMesh"));
 	RootComponent = MinaMesh;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> MinaMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MinaMeshAsset(TEXT("StaticMesh'/Game/Assets/Sci-Fi_bomb.Sci-Fi_bomb'"));
 	MinaMesh->SetStaticMesh(MinaMeshAsset.Object);
+	SetActorRelativeRotation(FRotator(0.0f, 0.0f, 0.0f));
+
 	Tipo = "Explosiva";
+	bIsActivada = false;
+	Activacion = 0.0f;
+	Detonacion = 5.0f;
 
 }
 
@@ -28,25 +32,44 @@ void AMina::BeginPlay()
 void AMina::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
+	if(bIsActivada)
+	{
+	Activacion += DeltaTime;
+	if (Activacion >=Detonacion)
+	{
+			Activar();
+		}
+	}
 }
 
 void AMina::Activar()
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Mina activada"));
-
-
+	UE_LOG(LogTemp, Warning, TEXT("Mina activada"));
+	TArray<AActor*> OverlappingActors;
+	MinaMesh->GetOverlappingActors(OverlappingActors, AGalagaPawn::StaticClass());
+	for (AActor* Actor : OverlappingActors)
+	{
+			AGalagaPawn* GalagaPawn = Cast<AGalagaPawn>(Actor);
+			if (GalagaPawn)
+			{
+				Detonar();
+				return;
+			}
+		}
+	bIsActivada = false;
+	Activacion = 0.0f;
 }
 
 void AMina::Desactivar()
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Mina desactivada"));
+	UE_LOG(LogTemp, Warning, TEXT("Mina desactivada"));
 }
 
 void AMina::Detonar()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Mina detonada"));
 	//Destroy();
-	//UE_LOG(LogTemp, Warning, TEXT("Mina detonada"));
 }
 
 void AMina::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
@@ -55,7 +78,9 @@ void AMina::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComp
 		if (GalagaPawn)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Mina colisionada con GalagaPawn"));
-			Other->Destroy();
-			Detonar();
+			bIsActivada = true;
+			Activacion = 0.0f;
+			//Other->Destroy();
+			//Detonar();
 		}
 }

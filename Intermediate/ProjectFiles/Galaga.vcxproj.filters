@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2C922594-4094-4CDD-903F-4F7A5B8DA442}</UniqueIdentifier>
+      <UniqueIdentifier>{4049197E-F348-4356-909B-1C35F7E40B25}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{2A5EC252-ADE8-4EC7-A756-95A182A02021}</UniqueIdentifier>
+      <UniqueIdentifier>{8ED6132B-F8C0-45EF-9E0F-D3A499C2D251}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga">
-      <UniqueIdentifier>{28D0859A-97EF-4524-ADC6-4B47AB436BBA}</UniqueIdentifier>
+      <UniqueIdentifier>{F7FFB18C-4772-479F-8E53-5937F450920A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Galaga\Asteroides.cpp">
+      <Filter>Source\Galaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga\Asteroides.h">
+      <Filter>Source\Galaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga\BebeNave.cpp">
+      <Filter>Source\Galaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga\BebeNave.h">
+      <Filter>Source\Galaga</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Galaga\ConstructoraNaveEnemiga.cpp">
       <Filter>Source\Galaga</Filter>
     </ClCompile>
@@ -56,6 +68,12 @@
       <Filter>Source\Galaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga\DirectorNave.h">
+      <Filter>Source\Galaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga\Facade.cpp">
+      <Filter>Source\Galaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga\Facade.h">
       <Filter>Source\Galaga</Filter>
     </ClInclude>
     <None Include="..\..\Source\Galaga\Galaga.Build.cs">
@@ -83,6 +101,12 @@
       <Filter>Source\Galaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga\GalagaProjectile.h">
+      <Filter>Source\Galaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga\Mina.cpp">
+      <Filter>Source\Galaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga\Mina.h">
       <Filter>Source\Galaga</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Galaga\NaveEnemiga.cpp">
@@ -125,6 +149,12 @@
       <Filter>Source\Galaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga\NE_Tanque.h">
+      <Filter>Source\Galaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga\Teletransporte.cpp">
+      <Filter>Source\Galaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga\Teletransporte.h">
       <Filter>Source\Galaga</Filter>
     </ClInclude>
   </ItemGroup>

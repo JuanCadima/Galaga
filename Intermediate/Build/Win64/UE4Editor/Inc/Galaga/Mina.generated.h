@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GALAGA_Mina_generated_h
 
-#define Galaga_Source_Galaga_Mina_h_12_SPARSE_DATA
-#define Galaga_Source_Galaga_Mina_h_12_RPC_WRAPPERS
-#define Galaga_Source_Galaga_Mina_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Galaga_Source_Galaga_Mina_h_12_INCLASS_NO_PURE_DECLS \
+#define Galaga_Source_Galaga_Mina_h_13_SPARSE_DATA
+#define Galaga_Source_Galaga_Mina_h_13_RPC_WRAPPERS
+#define Galaga_Source_Galaga_Mina_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define Galaga_Source_Galaga_Mina_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMina(); \
 	friend struct Z_Construct_UClass_AMina_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMina)
 
 
-#define Galaga_Source_Galaga_Mina_h_12_INCLASS \
+#define Galaga_Source_Galaga_Mina_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAMina(); \
 	friend struct Z_Construct_UClass_AMina_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AMina)
 
 
-#define Galaga_Source_Galaga_Mina_h_12_STANDARD_CONSTRUCTORS \
+#define Galaga_Source_Galaga_Mina_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMina(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMina) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Galaga_Source_Galaga_Mina_h_12_ENHANCED_CONSTRUCTORS \
+#define Galaga_Source_Galaga_Mina_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMina(AMina&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMina)
 
 
-#define Galaga_Source_Galaga_Mina_h_12_PRIVATE_PROPERTY_OFFSET
-#define Galaga_Source_Galaga_Mina_h_9_PROLOG
-#define Galaga_Source_Galaga_Mina_h_12_GENERATED_BODY_LEGACY \
+#define Galaga_Source_Galaga_Mina_h_13_PRIVATE_PROPERTY_OFFSET
+#define Galaga_Source_Galaga_Mina_h_10_PROLOG
+#define Galaga_Source_Galaga_Mina_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Galaga_Source_Galaga_Mina_h_12_PRIVATE_PROPERTY_OFFSET \
-	Galaga_Source_Galaga_Mina_h_12_SPARSE_DATA \
-	Galaga_Source_Galaga_Mina_h_12_RPC_WRAPPERS \
-	Galaga_Source_Galaga_Mina_h_12_INCLASS \
-	Galaga_Source_Galaga_Mina_h_12_STANDARD_CONSTRUCTORS \
+	Galaga_Source_Galaga_Mina_h_13_PRIVATE_PROPERTY_OFFSET \
+	Galaga_Source_Galaga_Mina_h_13_SPARSE_DATA \
+	Galaga_Source_Galaga_Mina_h_13_RPC_WRAPPERS \
+	Galaga_Source_Galaga_Mina_h_13_INCLASS \
+	Galaga_Source_Galaga_Mina_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Galaga_Source_Galaga_Mina_h_12_GENERATED_BODY \
+#define Galaga_Source_Galaga_Mina_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Galaga_Source_Galaga_Mina_h_12_PRIVATE_PROPERTY_OFFSET \
-	Galaga_Source_Galaga_Mina_h_12_SPARSE_DATA \
-	Galaga_Source_Galaga_Mina_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Galaga_Source_Galaga_Mina_h_12_INCLASS_NO_PURE_DECLS \
-	Galaga_Source_Galaga_Mina_h_12_ENHANCED_CONSTRUCTORS \
+	Galaga_Source_Galaga_Mina_h_13_PRIVATE_PROPERTY_OFFSET \
+	Galaga_Source_Galaga_Mina_h_13_SPARSE_DATA \
+	Galaga_Source_Galaga_Mina_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	Galaga_Source_Galaga_Mina_h_13_INCLASS_NO_PURE_DECLS \
+	Galaga_Source_Galaga_Mina_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

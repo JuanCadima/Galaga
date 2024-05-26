@@ -1,0 +1,5 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\DebugGame\Galaga\Definitions.Galaga.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveEnemigaSquad.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\Inc\Galaga\NaveEnemigaSquad.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\NaveEnemiga.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\Inc\Galaga\NaveEnemiga.generated.h

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/TextRenderComponent.h"
 #include "Mina.generated.h"
 
 UCLASS()
@@ -28,6 +29,10 @@ public:
 	UStaticMeshComponent* MinaMesh;
 
 	FString Tipo;
+
+	bool bIsActivada;
+	float Activacion;
+	float Detonacion;
 	int Dano;
 
 	void Activar();

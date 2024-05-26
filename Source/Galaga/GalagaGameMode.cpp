@@ -20,8 +20,10 @@ void AGalagaGameMode::BeginPlay()
 	Super::BeginPlay();
 
 	FFacade = GetWorld()->SpawnActor<AFacade>(AFacade::StaticClass());
-	FFacade->ComunicadoAsteroides();
-	FFacade->ComunicadoMinas();
+	FFacade->BebeEnPeligro();
+	//FFacade->ComunicadoAsteroides();
+	//FFacade->ComunicadoMinas();
+	FFacade->ComunicadoTeletransporte();
 
 
 
@@ -54,7 +56,7 @@ void AGalagaGameMode::BeginPlay()
 	if (NaveRapida)
 	{
 		ANavesdeVelocidades* NaveRapidaCreada = Cast<ANavesdeVelocidades>(NaveRapida);
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Nave Rapida creada"));
+		//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Nave Rapida creada"));
 	}
 	else
 	{

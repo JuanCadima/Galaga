@@ -1,0 +1,3 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\DebugGame\Galaga\Definitions.Galaga.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\ConstructoraNaveEnemiga.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\Inc\Galaga\ConstructoraNaveEnemiga.generated.h

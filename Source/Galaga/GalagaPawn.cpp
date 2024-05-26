@@ -13,6 +13,9 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 
+#include "Asteroides.h"
+#include "BebeNave.h"
+
 const FName AGalagaPawn::MoveForwardBinding("MoveForward");
 const FName AGalagaPawn::MoveRightBinding("MoveRight");
 const FName AGalagaPawn::FireForwardBinding("FireForward");
@@ -50,6 +53,8 @@ AGalagaPawn::AGalagaPawn()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
 	bCanFire = true;
+
+	DanoNave = 10;
 }
 
 void AGalagaPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -127,6 +132,16 @@ void AGalagaPawn::FireShot(FVector FireDirection)
 				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 			}
 
+			if (AAsteroides* Asteroide = Cast<AAsteroides>(GetWorld()->GetFirstPlayerController()->GetPawn()))
+			{
+				DanoNave = Asteroide->DanoAsteroide;
+				Asteroide->DestruirAsteroide();
+			}
+			else if (ABebeNave* BebeNave = Cast<ABebeNave>(GetWorld()->GetFirstPlayerController()->GetPawn()))
+			{
+				DanoNave = BebeNave->DanoRecibido;
+				BebeNave->Morir();
+			}
 			bCanFire = false;
 		}
 	}

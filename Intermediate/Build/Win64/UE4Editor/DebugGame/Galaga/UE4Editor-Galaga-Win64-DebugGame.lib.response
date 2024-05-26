@@ -8,6 +8,7 @@
 /NODEFAULTLIB
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\GalagaEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Asteroides.cpp.obj"
+"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\BebeNave.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\ConstructoraNaveEnemiga.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\ConstruirNaveNodriza.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\CreacionNavesEnemigas.cpp.obj"
@@ -27,6 +28,7 @@
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\NE_Tanque.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Teletransporte.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\Asteroides.gen.cpp.obj"
+"E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\BebeNave.gen.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\ConstructoraNaveEnemiga.gen.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\ConstruirNaveNodriza.gen.cpp.obj"
 "E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\DebugGame\Galaga\CreacionNavesEnemigas.gen.cpp.obj"

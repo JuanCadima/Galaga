@@ -30,16 +30,30 @@ public:
 	TArray<class AAsteroides*> Peligro;
 	TArray<class AMina*> Lancen;
 
+	TArray<FString> Venganza;
+	TArray<class ABebeNave*> Bebe_Peligro;
+
+	FTimerHandle AsteroidesTimer;
+	int32 AsteroideSpawnIndex;
+
 
 public:
 
 	class AAsteroides* Asteroides;
 	class AMina* Mina;
+	class ATeletransporte* Teletransporte;
+
+	class ABebeNave* BebeNave;
+
 
 	void Comunicado(TArray<class AAsteroides*> _Peligro, TArray<class AMina*> _Lancen, TArray<FString> _LLamada);
 
+	void ComunicadoBebeNave(TArray<class ABebeNave*> _BebeNave, TArray<FString> _Cumplir);
+	void BebeEnPeligro();
+
 	void ComunicadoMinas();
 	void ComunicadoAsteroides();
+	void ComunicadoTeletransporte();
 
 
 	void AgregarAsteroides();

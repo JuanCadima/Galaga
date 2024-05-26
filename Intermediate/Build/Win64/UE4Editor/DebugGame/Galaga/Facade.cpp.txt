@@ -4,4 +4,10 @@ E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Facad
 E:\Progamacion\Galaga\Galaga\Source\Galaga\Asteroides.h
 E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Asteroides.generated.h
 E:\Progamacion\Galaga\Galaga\Source\Galaga\Mina.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
 E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Mina.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\BebeNave.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\BebeNave.generated.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Teletransporte.h
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4Editor\Inc\Galaga\Teletransporte.generated.h

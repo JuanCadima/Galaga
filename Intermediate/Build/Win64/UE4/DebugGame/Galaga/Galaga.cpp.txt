@@ -1,0 +1,2 @@
+E:\Progamacion\Galaga\Galaga\Intermediate\Build\Win64\UE4\DebugGame\Galaga\Definitions.Galaga.h
+E:\Progamacion\Galaga\Galaga\Source\Galaga\Galaga.h

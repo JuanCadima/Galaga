@@ -7,6 +7,8 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Engine/StaticMesh.h"
 #include "NaveEnemiga.h"
+#include "Asteroides.h"
+#include "BebeNave.h"
 
 AGalagaProjectile::AGalagaProjectile() 
 {
@@ -41,10 +43,26 @@ void AGalagaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
+
 	ANaveEnemiga* NaveEnemiga = Cast<ANaveEnemiga>(OtherActor);
 	if (NaveEnemiga)
 	{
 		NaveEnemiga->RecibirDano(0);
+		Destroy();
+	}
+
+	if (OtherActor->IsA(AAsteroides::StaticClass()))
+	{
+		AAsteroides* Asteroide = Cast<AAsteroides>(OtherActor);
+		Asteroide->DestruirAsteroide();
+		Destroy();
+	}
+
+	if (OtherActor->IsA(ABebeNave::StaticClass()))
+	{
+		ABebeNave* Bebe = Cast<ABebeNave>(OtherActor);
+		Bebe->Llanto();
+		Bebe->Morir();
 		Destroy();
 	}
 

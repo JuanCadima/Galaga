@@ -6,8 +6,9 @@
 ANaveRapida::ANaveRapida()
 {
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> NaveMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> NaveMesh(TEXT("StaticMesh'/Game/Assets/Naves/Fighter_01.Fighter_01'"));
 	MeshNaveEnemiga->SetStaticMesh(NaveMesh.Object);
+	MeshNaveEnemiga->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 	VelocidadMaxima = 100;
 }
 

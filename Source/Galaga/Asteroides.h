@@ -23,7 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-public:
+public: 
+
 
 	UStaticMeshComponent* AsteroideMesh;
 
@@ -37,6 +38,7 @@ public:
 
 	float Velocidad;
 
+
 public:
 
 	void DestruirAsteroide();
@@ -45,6 +47,5 @@ public:
 
 	void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit);
 
-	
 
 };
